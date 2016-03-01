@@ -25,8 +25,26 @@
         <span class="fa fa-user"></span>
         <span><a class="special" href="#">Account</a></span>
         <span class="fa fa-globe"></span>
-        <span><a class="special" href="#">English &#9013 </a></span>
-        <span><a href="#"> $ USD &#9013 </a></span>
+        <!-- <span><a class="special" href="#">English &#9013 </a></span> -->
+        <div class="dropdown border-right">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">English
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Romanian</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">$ USD
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+        <!-- <span><a href="#"> $ USD &#9013 </a></span> -->
       </div>
     </div>
   </header>
@@ -81,11 +99,36 @@
       </div>
       <div class="col-50 section2-right-content">
         <h4>LONG DRESS WITH CHAIN NECKLINE</h4>
+        <!-- <p class="fa fa-star"></p>
         <p class="fa fa-star"></p>
         <p class="fa fa-star"></p>
         <p class="fa fa-star"></p>
-        <p class="fa fa-star"></p>
-        <p class="fa fa-star gray-star"></p>
+        <p class="fa fa-star gray-star"></p> -->
+        <div class="stars-rating">
+          <fieldset class="rating">
+            <input type="radio" id="star6" name="rating" value="5" />
+            <label class="full" for="star6" title="Awesome - 5 stars"></label>
+            <input type="radio" id="star4half" name="rating" value="4 and a half" />
+            <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+            <input type="radio" id="star7" name="rating" value="4" />
+            <label class="full" for="star7" title="Pretty good - 4 stars"></label>
+            <input type="radio" id="star3half" name="rating" value="3 and a half" />
+            <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+            <input type="radio" id="star8" name="rating" value="3" />
+            <label class="full" for="star8" title="Meh - 3 stars"></label>
+            <input type="radio" id="star2half" name="rating" value="2 and a half" />
+            <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+            <input type="radio" id="star9" name="rating" value="2" />
+            <label class="full" for="star9" title="Kinda bad - 2 stars"></label>
+            <input type="radio" id="star1half" name="rating" value="1 and a half" />
+            <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+            <input type="radio" id="star10" name="rating" value="1" />
+            <label class="full" for="star10" title="Sucks big time - 1 star"></label>
+            <input type="radio" id="starhalf" name="rating" value="half" />
+            <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+          </fieldset>
+
+        </div>
         <a href="#">3 reviews</a>
         <span> | </span>
         <a href="#">Add your review</a>
@@ -156,36 +199,12 @@
             <li><i class="fa fa-shopping-cart"></i></li>
           </ul>
           <img class="mouse-over-image" src="assets/img/image1.jpg" alt="fashion" width="90%" />
-          <!-- <div class="stars">
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-          </div> -->
-          <div class="stars-rating">
-            <fieldset class="rating">
-              <input type="radio" id="star5" name="rating" value="5" />
-              <label class="full" for="star5" title="Awesome - 5 stars"></label>
-              <input type="radio" id="star4half" name="rating" value="4 and a half" />
-              <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-              <input type="radio" id="star4" name="rating" value="4" />
-              <label class="full" for="star4" title="Pretty good - 4 stars"></label>
-              <input type="radio" id="star3half" name="rating" value="3 and a half" />
-              <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-              <input type="radio" id="star3" name="rating" value="3" />
-              <label class="full" for="star3" title="Meh - 3 stars"></label>
-              <input type="radio" id="star2half" name="rating" value="2 and a half" />
-              <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-              <input type="radio" id="star2" name="rating" value="2" />
-              <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-              <input type="radio" id="star1half" name="rating" value="1 and a half" />
-              <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-              <input type="radio" id="star1" name="rating" value="1" />
-              <label class="full" for="star1" title="Sucks big time - 1 star"></label>
-              <input type="radio" id="starhalf" name="rating" value="half" />
-              <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-            </fieldset>
+          <div class="stars">
+            <p class="fa fa-star active"></p>
+            <p class="fa fa-star active"></p>
+            <p class="fa fa-star active"></p>
+            <p class="fa fa-star gray-star"></p>
+            <p class="fa fa-star gray-star"></p>
           </div>
           <p class="gray-text">Duis autem eum iriure</p>
           <p><b>$56.00</b></p>
@@ -198,36 +217,12 @@
             <li><i class="fa fa-shopping-cart"></i></li>
           </ul>
           <img class="mouse-over-image" src="assets/img/image2.jpg" alt="fashion" width="90%" />
-          <!-- <div class="stars">
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star gray-star-section3"></p>
-            <p class="fa fa-star gray-star-section3"></p>
-          </div> -->
-          <div class="stars-rating">
-            <fieldset class="rating">
-              <input type="radio" id="star5" name="rating" value="5" />
-              <label class="full" for="star5" title="Awesome - 5 stars"></label>
-              <input type="radio" id="star4half" name="rating" value="4 and a half" />
-              <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-              <input type="radio" id="star4" name="rating" value="4" />
-              <label class="full" for="star4" title="Pretty good - 4 stars"></label>
-              <input type="radio" id="star3half" name="rating" value="3 and a half" />
-              <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-              <input type="radio" id="star3" name="rating" value="3" />
-              <label class="full" for="star3" title="Meh - 3 stars"></label>
-              <input type="radio" id="star2half" name="rating" value="2 and a half" />
-              <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-              <input type="radio" id="star2" name="rating" value="2" />
-              <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-              <input type="radio" id="star1half" name="rating" value="1 and a half" />
-              <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-              <input type="radio" id="star1" name="rating" value="1" />
-              <label class="full" for="star1" title="Sucks big time - 1 star"></label>
-              <input type="radio" id="starhalf" name="rating" value="half" />
-              <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-            </fieldset>
+          <div class="stars">
+            <p class="fa fa-star active"></p>
+            <p class="fa fa-star active"></p>
+            <p class="fa fa-star gray-star"></p>
+            <p class="fa fa-star gray-star"></p>
+            <p class="fa fa-star gray-star"></p>
           </div>
           <p class="gray-text">Duis autem eum iriure</p>
           <p><b>$56.00</b></p>
@@ -240,37 +235,14 @@
             <li><i class="fa fa-shopping-cart"></i></li>
           </ul>
           <img class="mouse-over-image" src="assets/img/image3.jpg" alt="fashion" width="90%" />
-          <!-- <div class="stars">
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star gray-star-section3"></p>
-          </div> -->
-          <div class="stars-rating">
-            <fieldset class="rating">
-              <input type="radio" id="star5" name="rating" value="5" />
-              <label class="full" for="star5" title="Awesome - 5 stars"></label>
-              <input type="radio" id="star4half" name="rating" value="4 and a half" />
-              <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-              <input type="radio" id="star4" name="rating" value="4" />
-              <label class="full" for="star4" title="Pretty good - 4 stars"></label>
-              <input type="radio" id="star3half" name="rating" value="3 and a half" />
-              <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-              <input type="radio" id="star3" name="rating" value="3" />
-              <label class="full" for="star3" title="Meh - 3 stars"></label>
-              <input type="radio" id="star2half" name="rating" value="2 and a half" />
-              <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-              <input type="radio" id="star2" name="rating" value="2" />
-              <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-              <input type="radio" id="star1half" name="rating" value="1 and a half" />
-              <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-              <input type="radio" id="star1" name="rating" value="1" />
-              <label class="full" for="star1" title="Sucks big time - 1 star"></label>
-              <input type="radio" id="starhalf" name="rating" value="half" />
-              <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-            </fieldset>
+          <div class="stars">
+            <p class="fa fa-star active"></p>
+            <p class="fa fa-star gray-star"></p>
+            <p class="fa fa-star gray-star"></p>
+            <p class="fa fa-star gray-star"></p>
+            <p class="fa fa-star gray-star"></p>
           </div>
+
           <p class="gray-text">Duis autem eum iriure</p>
           <p><b>$56.00</b></p>
         </div>
@@ -282,71 +254,20 @@
             <li><i class="fa fa-shopping-cart"></i></li>
           </ul>
           <img class="mouse-over-image" src="assets/img/image4.jpg" alt="fashion" width="90%" />
-          <!-- <div class="stars">
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-            <p class="fa fa-star"></p>
-          </div> -->
-          <div class="stars-rating">
-            <fieldset class="rating">
-              <input type="radio" id="star5" name="rating" value="5" />
-              <label class="full" for="star5" title="Awesome - 5 stars"></label>
-              <input type="radio" id="star4half" name="rating" value="4 and a half" />
-              <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-              <input type="radio" id="star4" name="rating" value="4" />
-              <label class="full" for="star4" title="Pretty good - 4 stars"></label>
-              <input type="radio" id="star3half" name="rating" value="3 and a half" />
-              <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-              <input type="radio" id="star3" name="rating" value="3" />
-              <label class="full" for="star3" title="Meh - 3 stars"></label>
-              <input type="radio" id="star2half" name="rating" value="2 and a half" />
-              <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-              <input type="radio" id="star2" name="rating" value="2" />
-              <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-              <input type="radio" id="star1half" name="rating" value="1 and a half" />
-              <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-              <input type="radio" id="star1" name="rating" value="1" />
-              <label class="full" for="star1" title="Sucks big time - 1 star"></label>
-              <input type="radio" id="starhalf" name="rating" value="half" />
-              <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-            </fieldset>
+          <div class="stars">
+            <p class="fa fa-star active"></p>
+            <p class="fa fa-star active"></p>
+            <p class="fa fa-star gray-star"></p>
+            <p class="fa fa-star gray-star"></p>
+            <p class="fa fa-star gray-star"></p>
           </div>
+
           <p class="gray-text">Duis autem eum iriure</p>
           <p><b>$56.00</b></p>
         </div>
       </div>
   </section>
-  <!-- <section class="row section4">
-      <div class="section4-content">
-        <div class="col-40">
-          <h5>ABOUT TWO</h5>
-          <p>
-            E un fapt bine stabilit că cititorul va fi sustras de conţinutul citibil al unei pagini atunci când se uită la aşezarea în pagină. Scopul utilizării a Lorem Ipsum, este acela că are o distribuţie a literelor mai mult sau mai puţin normale, faţă de utilizarea a ceva de genul "Conţinut aici, conţinut acolo", făcându-l să arate ca o engleză citibilă. Multe pachete de publicare pentru calculator şi editoare de pagini web folosesc acum Lorem.
-          </p>
-          <ul class="soc">
-            <li><a class="soc-facebook" href="#"></a></li>
-            <li><a class="soc-twitter" href="#"></a></li>
-            <li><a class="soc-google" href="#"></a></li>
-            <li><a class="soc-instagram" href="#"></a></li>
-            <li><a class="soc-pinterest soc-icon-last" href="#"></a></li>
-          </ul>
-          </div>
-        <div class="col-20">
-          <h5>ACCOUNT</h5>
-        </div>
-        <div class="col-15">
-          <h5>SUPPORT</h5>
-        </div>
-        <div class="col-25">
-          <h5>NEWSLETTER</h5>
-        </div>
-      </div>
-    </section>
-    <footer class="row section5">
-      <p>&copy 2015 TwoTheme. All right reserved. Designed by Redikiel</p>
-    </footer> -->
+
   <section class="row section4">
     <div class="section4-content">
       <div class="col-40 about">
@@ -391,7 +312,7 @@
       <div class="col-20 news">
         <h5 class="title">NEWSLETTER</h5>
         <p class="news-para">Sign up to become the 1st receive our latest news and promotion</p>
-        <input type="text" name="mail" placeholder="your mail... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8663;">
+        <input type="text" name="mail" placeholder="your mail...">
       </div>
     </div>
   </section>
@@ -400,6 +321,8 @@
   </footer>
   <script src="assets/js/selected-item.js"></script>
   <script src="assets/js/mouseover-img.js"></script>
+  <script src="assets/js/rating.js"></script>
+
 </body>
 
 </html>
