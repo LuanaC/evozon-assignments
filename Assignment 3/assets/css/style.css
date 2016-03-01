@@ -1,0 +1,155 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  position: relative;
+}
+button:focus {
+  outline: 0;
+}
+.container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 683px;
+}
+.container-left {
+  float: left;
+  width: 50%;
+}
+.active-money-btn {
+  background-color: rgb(60, 74, 90);
+  color: white;
+}
+.active-details-btn {
+  background-color: rgb(60, 74, 90);
+  color: white;
+}
+.container-right {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding-left: 50px;
+  float: left;
+  width: 50%;
+}
+.container-left > img {
+  width: 100%;
+}
+.small-images {
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 0;
+}
+.small-images li {
+  display: inline-block;
+  width: 33.33%;
+  float: left;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.small-images li img {
+  width: 100%;
+  display: block;
+}
+.title1 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 20px;
+  margin-top: 0;
+}
+.title2 {
+  margin-top: -3px;
+  color: #999999;
+  font-size: 16px;
+}
+.model {
+  font-size: 16px;
+}
+.info {
+  display: inline;
+}
+select {
+  padding: 10px 180px 10px 10px;
+  border-radius: 4px;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+.first {
+  display: inline-block;
+  margin-right: 11px;
+}
+button {
+  border: 1px solid rgb(185, 189, 193);
+  background-color: white;
+  padding: 8px 13px;
+  border-radius: 4px;
+}
+hr {
+  margin-left: 0;
+  width: 62%;
+  color: rgb(185, 189, 193);
+}
+.info {
+  font-size: small;
+  color: #999999;
+}
+.button1 {
+  /*background-color: rgb(60,74,90);*/
+  border-radius: 6px 0 0 6px;
+  color: white;
+  padding: 12px 30px;
+  border-right: 0;
+  color: #999999;
+}
+.button2 {
+  border-radius: 0;
+  padding: 12px 40px;
+  border-right: 0;
+  border-left: 0;
+  color: #999999;
+}
+.button3 {
+  border-radius: 0 6px 6px 0;
+  padding: 12px 39px;
+  border-left: 0;
+  color: #999999;
+}
+.text {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 2;
+}
+.btn1 {
+  margin-right: 0px;
+  float: left;
+}
+.btn2 {
+  float: left;
+}
+.brn3 {
+  float: left;
+}
+.list1 {
+  margin-top: 45px;
+}
+.active-details-btn {
+  background-color: rgb(60, 74, 90);
+  color: white;
+}
+.image-style {
+  -moz-box-shadow: 0 0 10px black;
+  -webkit-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 15px black;
+}

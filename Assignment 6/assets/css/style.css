@@ -1,0 +1,537 @@
+.col-100 {
+  width: 100%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-25 {
+  width: 25%;
+}
+.col-33 {
+  width: 33.3333%;
+}
+.col-66 {
+  width: 66.6666%;
+}
+.col-75 {
+  width: 75%;
+}
+.col-65 {
+  width: 65%;
+}
+.col-10 {
+  width: 10%;
+  height: 100px;
+}
+.col-15 {
+  width: 15%;
+  height: 100px;
+}
+.col-20 {
+  width: 20%;
+}
+.col-35 {
+  width: 35%;
+}
+.col-40 {
+  width: 40%;
+}
+* {
+  box-sizing: border-box;
+}
+:after, :before {
+  box-sizing: border-box;
+}
+.cf:before, .cf:after, .row:before, .row:after {
+  content: "";
+  display: table;
+}
+.cf:after, .row:after {
+  clear: both;
+}
+[class^="col-"], [class*=" col-"] {
+  float: left;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+html, body {
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.vertical {
+  position: relative;
+  display: table;
+  width: 100%;
+}
+.vertical .inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.header {
+  height: 100%;
+  background: url('../img/desert.jpg') no-repeat;
+  background-size: cover;
+}
+.menu-icon {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.menu-icon img {
+  width: 70px;
+  float: left;
+}
+.navigation-bar {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.navigation a {
+  display: inline-block;
+}
+.navigation {
+  list-style: none;
+}
+.navigation li {
+  line-height: 4;
+  display: inline-block;
+  ;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-right: 20px;
+  letter-spacing: 3px;
+}
+.navigation > li a {
+  text-decoration: none;
+  color: white;
+}
+.build-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+}
+.build-btn a {
+  text-decoration: none;
+  float: right;
+  background-color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 15px;
+  line-height: 2;
+  /*border:1px solid #666666;*/
+  border: none;
+  letter-spacing: 2px;
+  color: black;
+  margin-right: 20px;
+}
+.footer-header {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.title {
+  text-transform: uppercase;
+}
+.hero-unit {
+  text-align: center;
+  color: white;
+  clear: both;
+}
+.hero-unit .title {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 74px;
+  text-transform: none;
+  letter-spacing: 7px;
+}
+.hero-unit .sub-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.btn {
+  padding: 12px 16px;
+  color: white;
+  background-color: #c2c2c2;
+  border: 1px solid #B1B1B1;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+.btn-primary {
+  background-color: rgb(66, 126, 154);
+  border-color: #1061AF;
+}
+.proof {
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.proof .call-action {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+.proof .sub-title {
+  font-style: italic;
+  color: #981818;
+  text-transform: uppercase;
+}
+.header-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+.footer-content {
+  margin-bottom: 25px;
+  margin-left: 25px;
+  letter-spacing: 3px;
+}
+.footer-title {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 0;
+  letter-spacing: 3px;
+}
+.footer-subtitle {
+  color: white;
+  margin-top: 0;
+  font-size: 17px;
+  letter-spacing: 3px;
+}
+.footer-btn {
+  border-radius: 30px;
+  padding: 5px 30px;
+  font-size: 12px;
+  background-color: white;
+  border: none;
+  letter-spacing: 3px;
+}
+.footer-link {
+  margin-left: 10px;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.img-adv {
+  /*display: inline-block;*/
+  float: left;
+  width: 30%;
+  margin-right: 12px;
+}
+.slide-show {
+  display: none;
+  width: 100%;
+  height: 700px;
+}
+.slide1 {
+  background: url("../img/seaside.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.slide2 {
+  background: url("../img/desert2.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.centered {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.slide-show-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+.slide-show-content h3 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+.slide-show p {
+  margin: 5px;
+  color: white;
+  font-size: 20px;
+}
+.slide-show hr {
+  width: 6%;
+  border: 1px solid white;
+  margin-bottom: 30px;
+}
+.slide-show a {
+  margin-top: 30px;
+  background-color: #363636;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 5px 25px;
+}
+.text-adv {
+  margin-left: 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.title-adv {
+  /*display: inline-block;*/
+  font-weight: bold;
+  color: rgb(175, 65, 56);
+  letter-spacing: 5px;
+  margin-left: 10px;
+}
+.adv-content {
+  float: right;
+  width: 70%;
+  height: 150px;
+}
+.adv {
+  clear: both;
+}
+.footer-adv {
+  color: rgb(205, 205, 205);
+  letter-spacing: 3px;
+}
+.footer-container {
+  width: 70%;
+  margin: auto;
+}
+.page-footer {
+  width: 100%;
+  color: white;
+  background-color: rgb(30, 30, 30);
+}
+.page-footer ul {
+  line-height: 2;
+  letter-spacing: 3px;
+  list-style: none;
+  font-weight: bold;
+  margin-top: 50px;
+  padding-left: 0;
+}
+.page-footer ul li {}
+.left-list {
+  float: left;
+}
+input[type="text"] {
+  display: block;
+  background-color: rgb(30, 30, 30);
+  border-bottom-color: rgb(39, 39, 39);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%;
+  margin-top: 15px;
+}
+.email_address {
+  margin-bottom: 25px;
+}
+.margin-top-bottom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+input::-webkit-input-placeholder {
+  color: rgb(198, 51, 37) !important;
+  font-style: italic;
+}
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgb(198, 51, 37) !important;
+  font-style: italic;
+}
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgb(198, 51, 37) !important;
+  font-style: italic;
+}
+input:-ms-input-placeholder {
+  color: rgb(198, 51, 37) !important;
+  font-style: italic;
+}
+.subscribe_btn {
+  background-color: rgb(50, 50, 50);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  margin-top: 15px;
+  letter-spacing: 3px;
+}
+.page-footer .col-20 p {
+  margin-top: 45px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.page-footer .col-20 a {
+  margin-top: 15px;
+}
+.sub-footer {
+  background-color: rgb(18, 18, 18);
+  width: 100%;
+  color: rgb(83, 83, 83);
+}
+.sub-footer .col-35 {
+  margin-top: 30px;
+}
+
+/*.adventures-list .adventure-item .outer {
+  position: relative;
+  min-height: 200px;
+}
+
+.adventures-list .adventure-item .inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: green;
+  width: 50%;
+}*/
+
+.adventures-list .adventure-item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.adventures-list .adventure-item .action {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.adventures-list .adventure-item .outer {
+  position: relative;
+  height: 350px;
+  /*background-color: yellow;*/
+}
+.adventures-list .adventure-item .inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  /*background-color: green;*/
+  width: 100%;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.adv {
+  margin-bottom: 20px;
+}
+.right-sub-footer p {
+  margin-left: 200px;
+}
+.left-sub-footer p {
+  display: inline;
+  color: rgb(83, 83, 83);
+  padding:
+}
+#privacy {
+  margin-right: 20px;
+}
+#terms {
+  margin-left: 20px;
+}
+
+/*.first {
+  width: 100%;
+  height: 100vh;
+  background-image: url(desert.jpg);
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.header ul{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+ul img{
+  height: 40px;
+}
+
+li {
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.first p{
+  color: white;
+}
+
+.main #title, .main #subtitle{
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 70px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.main{
+  display: table;
+}
+
+.third img,.fourth img{
+  height: 400px;
+}*/
+
+.arrow-btn {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  padding: 30px 40px;
+}
+.adv-container {
+  width: 70%;
+  margin: auto;
+}
+input:focus {
+  outline: 0;
+}
+button:focus {
+  outline: 0;
+}
+.right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.active {
+  display: flex;
+}
+a {
+  cursor: pointer;
+}
